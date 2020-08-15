@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Beerhall.Models.Domain;
 using Beerhall.Data.Repositories;
 using System.Security.Claims;
+using Beerhall.Filters;
 
 namespace Beerhall {
     public class Startup {
@@ -43,6 +44,7 @@ namespace Beerhall {
             services.AddScoped<IBrewerRepository, BrewerRepository>();
             services.AddScoped<ILocationRepository, LocationRepository>();
             services.AddScoped<IBeerRepository, BeerRepository>();
+            services.AddScoped<CartSessionFilter>();
 
         }
 
