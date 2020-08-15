@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beerhall", "Beerhall\Beerhall.csproj", "{AC76A3BF-1CF7-425D-8904-619ACE401A51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beerhall.Tests", "Beerhall.Tests\Beerhall.Tests.csproj", "{D719F3DA-6D89-4AC3-BB52-7987DDFF1CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC76A3BF-1CF7-425D-8904-619ACE401A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC76A3BF-1CF7-425D-8904-619ACE401A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC76A3BF-1CF7-425D-8904-619ACE401A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC76A3BF-1CF7-425D-8904-619ACE401A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D719F3DA-6D89-4AC3-BB52-7987DDFF1CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D719F3DA-6D89-4AC3-BB52-7987DDFF1CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D719F3DA-6D89-4AC3-BB52-7987DDFF1CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D719F3DA-6D89-4AC3-BB52-7987DDFF1CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDCF9264-7A7B-468D-9C09-6F91BE515D37}
+	EndGlobalSection
+EndGlobal
