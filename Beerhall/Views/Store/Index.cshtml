@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Beerhall.Models.Domain.Beer>
+
+    @{
+        ViewData["Title"] = "The Beer Store";
+    }
+
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        @foreach (var beer in Model)
+        {
+            <div class="col-lg-4 col-md-6 col-xs-12 pb-3">
+                <img src="~/images/beers/placeholder.gif" alt="@beer.Name" class="pull-left" />
+                <h4>
+                    @beer.Name
+                    <span class="pull-right">@($"{beer.Price:N2} €")</span>
+                </h4>
+                <form asp-controller="Cart" asp-action="Add" asp-route-id="@beer.BeerId">
+                    <div class="form-group pull-right">
+                        <label class="sr-only" for="quantity">Quantity</label>
+                        <input type="number" name="quantity" value="1" min="1" style="width:5em" />
+                        <button type="submit" class="btn btn-outline-primary">
+                            <i class="fas fa-cart-plus"></i> Add to cart
+                        </button>
+                    </div>
+                </form>
+            </div>
+        }
+    </div>
+    <div class="clearfix"></div>

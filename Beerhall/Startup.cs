@@ -42,6 +42,7 @@ namespace Beerhall {
             services.AddScoped<BeerhallDataInitializer>();
             services.AddScoped<IBrewerRepository, BrewerRepository>();
             services.AddScoped<ILocationRepository, LocationRepository>();
+            services.AddScoped<IBeerRepository, BeerRepository>();
 
         }
 
